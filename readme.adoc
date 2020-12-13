@@ -8,3 +8,5 @@ In this example we just put a text in the element, target name targetElement.
 https://medium.com/swlh/python-in-web-easy-5f7de3813055
 
 https://pyodide.readthedocs.io/en/latest/using_pyodide_from_javascript.html#
+
+https://qvault.io/2020/09/24/running-python-in-the-browser-with-web-assembly/
