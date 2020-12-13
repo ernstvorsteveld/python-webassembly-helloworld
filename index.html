@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        window.languagePluginUrl = 'http://localhost:8000/'; // set the pyodide support files (packages.json, pyodide.asm.data etc) url
+    </script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.15.0/full/pyodide.js"></script>
+</head>
+
+<body>
+    <h1 id="targetElement"></h1>
+    Pyodide test page <br> Open your browser console to see pyodide output
+
+    <script type="text/javascript">
+        languagePluginLoader.then(function() {
+            console.log(pyodide.runPython('import sys\nsys.version'));
+            console.log(pyodide.runPython('help("modules")'));
+
+            pyodide.runPython('from js import document');
+            pyodide.runPython('elt = document.getElementById("targetElement")');
+            pyodide.runPython('elt.innerText = "Hello World of python!"');
+        });
+    </script>
+</body>
