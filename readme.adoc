@@ -1,0 +1,10 @@
+= Hello World and Python
+
+This project shows how to find an element in an html page and modify the html.
+In this example we just put a text in the element, target name targetElement.
+
+== Source
+
+https://medium.com/swlh/python-in-web-easy-5f7de3813055
+
+https://pyodide.readthedocs.io/en/latest/using_pyodide_from_javascript.html#
